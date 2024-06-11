@@ -10,7 +10,7 @@ def send_post_request(body_json):
     }
     headers = {
         "Authorization": f"Bearer {os.environ.get('PINATA_JWT')}",
-        "Content-Type": "application/json"
+        "Content-Type": "application/json; charset=utf-8"
     }
     response = requests.post(url, json=payload, headers=headers)
     return response.json()
