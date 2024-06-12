@@ -23,37 +23,8 @@ async def home(request: Request):
                     <meta property="fc:frame" content="vNext" />
                     <meta property="fc:frame:button:1" content="Next" />
                     <meta property="fc:frame:post_url" content="{os.environ.get('PROJECT_URL')}/view?frame=1" />
-                     <meta property="fc:frame:button:2" content="Nextte" />
-                    <meta property="fc:frame:post_url" content="description" />
-
-
-
-<div
-  style={{
-    height: '100%',
-    width: '100%',
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: '#fff',
-    fontSize: 32,
-    fontWeight: 600,
-  }}
->
-  <svg
-    width="75"
-    viewBox="0 0 75 65"
-    fill="#000"
-    style={{ margin: '0 75px' }}
-  >
-    <path d="M37.59.25l36.95 64H.64l36.95-64z"></path>
-  </svg>
-  <div style={{ marginTop: 40 }}>Hello, World</div>
-</div>
-
-
-                    
+                     <meta property="fc:frame:button:2" content="njlmkl mklmklmklmklmk njlmkl mklmklmklmklmk njlmkl mklmklmklmklmk njlmkl mklmklmklmklmk njlmkl mklmklmklmklmk njlmkl mklmklmklmklmk njlmkl mklmklmklmklmk njlmkl mklmklmklmklmk njlmkl mklmklmklmklmk njlmkl mklmklmklmklmk " />
+                    <meta property="fc:frame:post_url" content="description" />                    
                 </head>
                 <body>
                     <h1>{os.environ.get('TITLE')} on Farcaster!</h1>
