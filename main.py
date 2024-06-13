@@ -19,7 +19,7 @@ async def home(request: Request):
                 <head>
                     <title>{os.environ.get('TITLE')}</title>
                     <meta property="og:title" content="{os.environ.get('TITLE')}" />
-                    <meta property="fc:frame:image" content="{os.environ.get('INITIAL_IMAGE_URL')}" />
+                    
                     <meta property="fc:frame:info" content="this is a info" />
                     <meta property="fc:frame" content="vNext" />
                     <meta property="fc:frame:button:1" content="Next" />
