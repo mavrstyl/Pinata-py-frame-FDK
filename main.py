@@ -21,7 +21,7 @@ async def home(request: Request):
                     <meta property="og:title" content="{os.environ.get('TITLE')}" />
                     <meta property="fc:frame:image" content="{os.environ.get('INITIAL_IMAGE_URL')}" />
                     <meta property="fc:frame" content="vNext" />
-                    <meta property="fc:frame:button:1" content="Next" />
+                    <meta property="fc:frame:button:1" content="Begin" />
                     <meta property="fc:frame:post_url" content="{os.environ.get('PROJECT_URL')}/view?frame=1" />
                    
                 </head>
