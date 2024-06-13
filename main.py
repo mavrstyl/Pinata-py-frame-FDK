@@ -22,7 +22,7 @@ async def home(request: Request):
                     <meta property="fc:frame:image" content="{os.environ.get('INITIAL_IMAGE_URL')}" />
                     <meta property="fc:frame" content="vNext" />
                     <meta property="fc:frame:button:1" content="Begin" />
-                    <meta property="fc:frame:post_url" content="{os.environ.get('PROJECT_URL')}/view?frame=1" />                
+                    <meta property="fc:frame:post_url" content="{os.environ.get('PROJECT_URL')}/view?frame=1" />
                 </head>
                 <body>
                     <h1>{os.environ.get('TITLE')} on Farcaster!</h1>
@@ -30,7 +30,7 @@ async def home(request: Request):
                         <img src="{os.environ.get('INITIAL_IMAGE_URL')}" alt="{os.environ.get('TITLE')}">
                     </div>
                     <div>
-                        
+                        <a href="https://pinata.cloud" target="_blank">Powered by Pinata</a>
                     </div>
                 </body>
             </html>
@@ -49,7 +49,6 @@ async def view(request: Request):
         print(f"Error: {e}")
     frame_index = request.query_params.get("frame")
     next_frame = int(frame_index) + 1 
-    prev_frame = int(frame_index) - 1 
     imgCount = int(os.environ.get('NUMBER_OF_IMAGES'))
     if int(frame_index) == imgCount:
         return HTMLResponse (
@@ -62,10 +61,10 @@ async def view(request: Request):
                     <meta property="fc:frame:image" content="{os.environ.get('GATEWAY_URL')}/ipfs/{os.environ.get('FOLDER_CID')}/{frame_index}.jpg" />
                     <meta property="fc:frame:button:1" content="{os.environ.get('TITLE')}" />
                     <meta property="fc:frame:button:1:action" content="link" />
-                    <meta property="fc:frame:button:1:target" content="{os.environ.get('PROJECT_URL')}" />
-                    <meta property="fc:frame:button:2" content="Support me" />
+                    <meta property="fc:frame:button:1:target" content="{os.environ.get('EXTERNAL_URL')}" />
+                    <meta property="fc:frame:button:2" content="Built With..." />
                     <meta property="fc:frame:button:2:action" content="link" />
-                    <meta property="fc:frame:button:2:target" content="{os.environ.get('EXTERNAL_URL')}" />
+                    <meta property="fc:frame:button:2:target" content="https://pinata.cloud" />
                     </head></html>"""
             )
         )    
