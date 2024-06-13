@@ -22,8 +22,7 @@ async def home(request: Request):
                     <meta property="fc:frame:image" content="{os.environ.get('INITIAL_IMAGE_URL')}" />
                     <meta property="fc:frame" content="vNext" />
                     <meta property="fc:frame:button:1" content="Begin" />
-                    <meta property="fc:frame:post_url" content="{os.environ.get('PROJECT_URL')}/view?frame=1" />
-                   
+                    <meta property="fc:frame:post_url" content="{os.environ.get('PROJECT_URL')}/view?frame=1" />                
                 </head>
                 <body>
                     <h1>{os.environ.get('TITLE')} on Farcaster!</h1>
@@ -78,8 +77,7 @@ async def view(request: Request):
                     <title>This is frame {frame_index}</title>
                     <meta property="og:title" content="Frame" />
                     <meta property="fc:frame" content="vNext" />
-                    <meta property="fc:frame:image" content="{os.environ.get('GATEWAY_URL')}/ipfs/{os.environ.get('FOLDER_CID')}/{frame_index}.jpg" />
-                    <meta property="fc:frame:info" content="this is an info" />
+                    <meta property="fc:frame:image" content="test 123 {os.environ.get('GATEWAY_URL')}/ipfs/{os.environ.get('FOLDER_CID')}/{frame_index}.jpg" />
                     <meta property="fc:frame:button:1" content="Next" />
                     <meta property="fc:frame:post_url" content="{os.environ.get('PROJECT_URL')}/view?frame={next_frame}" />
                     </head></html>"""
