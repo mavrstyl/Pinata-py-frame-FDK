@@ -58,7 +58,7 @@ async def view(request: Request):
                     <title>This is frame {frame_index}</title>
                     <meta property="og:title" content="Frame" />
                     <meta property="fc:frame" content="vNext" />
-                    <meta property="fc:frame:image" content="{os.environ.get('GATEWAY_URL')}/ipfs/{os.environ.get('FOLDER_CID')}/{frame_index}.png" />
+                    <meta property="fc:frame:image" content="{os.environ.get('GATEWAY_URL')}/ipfs/{os.environ.get('FOLDER_CID')}/{frame_index}.jpg" />
                     <meta property="fc:frame:button:1" content="Support me" />
                     <meta property="fc:frame:button:1:action" content="link" />
                     <meta property="fc:frame:button:1:target" content="{os.environ.get('EXTERNAL_URL')}" />
@@ -73,7 +73,7 @@ async def view(request: Request):
                     <title>This is frame {frame_index}</title>
                     <meta property="og:title" content="Frame" />
                     <meta property="fc:frame" content="vNext" />
-                    <meta property="fc:frame:image" content="{os.environ.get('GATEWAY_URL')}/ipfs/{os.environ.get('FOLDER_CID')}/{frame_index}.png" />
+                    <meta property="fc:frame:image" content="{os.environ.get('GATEWAY_URL')}/ipfs/{os.environ.get('FOLDER_CID')}/{frame_index}.jpg" />
                     <meta property="fc:frame:button:1" content="Next" />
                     <meta property="fc:frame:post_url" content="{os.environ.get('PROJECT_URL')}/view?frame={next_frame}" />
                     </head></html>"""
